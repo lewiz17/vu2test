@@ -2,5 +2,5 @@
 source:         ""
 destination:    ./_gh_pages
 baseurl:        ""
-url:            "https://songet.top"
+url:            "http://songet.top"
 encoding:       UTF-8

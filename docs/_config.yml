@@ -1,0 +1,6 @@
+# Server
+source:         ""
+destination:    ./_gh_pages
+baseurl:        ""
+url:            "https://songet.top"
+encoding:       UTF-8

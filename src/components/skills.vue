@@ -9,7 +9,7 @@
       </form>
       <transition-group name="list" tag="ul" enter-active-class="animated bounceInUp" leave-active-class="animated bounceOutDown">  
         <li v-for="(data,index) in Skills" :key="data.skill">
-          {{data.skill}}
+          {{index}} - {{data.skill}}
           <i class="fa fa-minus-circle" v-on:click="remove(index)"></i>
         </li>
         
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'Mamita',
+  name: 'Skill',
   data() {
     return {
       skill: '',
@@ -39,13 +39,18 @@ export default {
           this.Skills.push({skill: this.skill})
           this.skill = "";
         }else{
-          console.log('Not valid');
+          this.log('Not valid');
         }
       })
       
     },
     remove(id) {
       this.Skills.splice(id,1);
+    },
+    log(error) {
+      /* eslint-disable no-console */
+      console.log(error);
+      /* eslint-enable no-console */
     }
   }
   

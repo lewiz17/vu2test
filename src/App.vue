@@ -1,20 +1,20 @@
 <template>
   <div id="app"> 
       <nav>
-        <router-link to="/">Home</router-link>
-        <router-link to="/about/Edward">About</router-link>
+        <router-link to="/">Inicio</router-link>
+        <router-link to="/about/Edward">Sobre mi</router-link>
       </nav>
     <router-view/>
   </div>
 </template>
 
 <script>
-import Mamita from './components/skills.vue'
+import Skill from './components/skills.vue'
 
 export default {
   name: 'app',
   components: {
-    Mamita
+    Skill
   }
 }
 </script>

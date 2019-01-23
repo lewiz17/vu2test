@@ -1,6 +1,3 @@
 # Server
-source:         ""
-destination:    ./_gh_pages
-baseurl:        ""
+baseurl:        "/vu2test"
 url:            "http://songet.top"
-encoding:       UTF-8

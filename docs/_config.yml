@@ -1,7 +1,2 @@
 # Server
-<<<<<<< HEAD
-baseurl:        "/vu2test"
-=======
-baseurl:        "/vu2test"
-url:            "https://songet01.github.io/vu2test"
->>>>>>> f81bdbe162445197a3a9d10971a324b6705eed61
+baseurl:    "/vu2test"

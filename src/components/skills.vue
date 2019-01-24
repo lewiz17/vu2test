@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <div class="holder">
-      <form @submit.prevent="addSkill">
+      <form @submit.prevent="addSkill" class="form-skill">
         <input type="text" placeholder="Ingresa algun skill que poseas" v-model="skill" v-validate="'min:5'" name="skill">
         <transition name="alert-in" enter-active-class="animated flipInX" leave-active-class="animated flipOutX">
           <p class="alert" v-if="errors.has('skill')">{{ errors.first('skill') }}</p>
@@ -62,6 +62,10 @@ export default {
 @import "https://cdn.jsdelivr.net/npm/animate.css@3.5.2";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"; 
 
+.form-skill{
+  position: relative;
+}
+
 .holder{
   background: #fff;
 }
@@ -98,9 +102,9 @@ input{
 .alert{
   background: #fdf2ce;
   font-weight: bold;
-  display: inline-block;
+  position: absolute;
   padding: 5px;
-  margin-top: -20px;
+  margin-top: -15px;
 }
   .alert-in-enter-active {
     animation: bounce-in .5s;
